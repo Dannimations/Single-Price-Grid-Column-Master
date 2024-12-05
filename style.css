@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --fs: 16px;
+    --fw-400: 400;
+    --fw-700: 700;
+    --ff: Karla, Segoe UI
+}
+
+body{
+    background-color: var(--light-gray);
+    font-size: var(--fs);
+    font-family: var(--ff);
+}
+
+.mainContainer{
+    padding: 1rem;
+    padding-top: 3rem;
+}
+.wrapper{
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px #dae3ec;
+}
+.box{
+    box-sizing: border-box;
+    padding: 1.5rem;
+    /* padding-bottom: 1rem; */
+    width: 100%;
+}
+
+.whiteTop{
+    background-color: white;
+    width: 100%;
+}
+
+.whiteTop h2{
+    color: var(--cyan);
+}
+
+.whiteTop h3{
+    color: var(--bright-yellow);
+}
+
+.whiteTop p{
+    color: #a4a9ad;
+    font-weight: var(--fw-400);
+}
+.bottomLeft{
+    background-color: var(--cyan);
+    color: white;
+}
+
+.bottomLeft span{
+    font: 2em sans-serif;
+}
+
+.bottomLeft button{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bright-yellow);
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.bottomRight{
+    background-color: #51b9b8;
+    color: var(--light-gray);
+}
+.bottomRight p{
+    line-height: 10px;
+    color: var(--light-gray);
+}
+@media (min-width: 800px){
+    .mainContainer{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        border: 1px solid;
+        height: 90dvh;
+    }
+    .wrapper{
+        /* border: 1px solid; */
+        align-self: center;
+        justify-self: center;
+        width: 45%;  
+    }
+    .bottom{
+        display: flex;
+    }
+    h3{
+        font-weight: var(--fw-400);
+    }
+    .bottomRight p{
+        font-size: .8rem;
+        line-height: 8px;
+    }
+}
